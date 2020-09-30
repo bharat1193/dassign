@@ -7,9 +7,14 @@ int a;
 Scanner sc=new Scanner(System.in);
 System.out.println("enter a no.:");
 a=sc.nextInt();
-if(a%2==0)
-System.out.println("entered no. is even");
-else
-System.out.println("entered no. is odd");
+// if(a%2==0)
+// System.out.println("entered no. is even");
+// else
+// System.out.println("entered no. is odd");
+  //better approach
+  if(a & 1)
+      System.out.println("entered no. is odd");    
+  else
+      System.out.println("entered no. is even");
 }
 }
